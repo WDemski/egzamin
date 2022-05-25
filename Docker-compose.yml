@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  egzamin:
+    build: .
+    ports:
+      - 80:80
+    networks:
+      - siec
+
+networks:
+    siec:
+      driver: bridge
